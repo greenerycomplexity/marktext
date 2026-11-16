@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/greenerycomplexity/marktext/releases"><b>Download for macOS</b></a>
+  <a href="https://github.com/greenerycomplexity/marktext/releases/latest"><b>Download for macOS</b></a>
   · macOS 26 or later · Apple Silicon
 </p>
 
@@ -82,14 +82,11 @@ There are no tabs, file tree, image uploaders, command palette or custom spellch
 
 ## Install
 
-1. Download `MarkText-2.0.0-arm64.dmg` from [Releases](https://github.com/greenerycomplexity/marktext/releases).
+1. Download `MarkText-2.0.0-arm64.dmg` from [Releases](https://github.com/greenerycomplexity/marktext/releases/latest).
 2. Open the DMG and drag **MarkText** to **Applications**.
 3. Right-click a `.md` file › Open With › MarkText. To make it the default, use Get Info › Open with › Change All.
 
-> [!IMPORTANT]
-> **The current build is not notarized yet.** macOS will say it "can't be opened" the first time. To allow it, open **System Settings › Privacy & Security**, scroll down to the message about MarkText, and click **Open Anyway**. You only need to do this once. A notarized build will replace this one, and the step will go away.
->
-> If you prefer the terminal: `xattr -dr com.apple.quarantine /Applications/MarkText.app`
+The app is signed with a Developer ID and notarized by Apple, so it opens like any other Mac app.
 
 Check the download against the `.sha256` file published with each release: `shasum -a 256 MarkText-2.0.0-arm64.dmg`.
 
