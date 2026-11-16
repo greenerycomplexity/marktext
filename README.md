@@ -6,7 +6,7 @@
 
 <p align="center">
   A native macOS markdown viewer that can also edit.<br>
-  Swift, Liquid Glass, Apple Silicon. 13 MB instead of 285 MB.
+  Swift, Liquid Glass, Apple Silicon. A 4.6 MB download.
 </p>
 
 <p align="center">
