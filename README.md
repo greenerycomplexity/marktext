@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/greenerycomplexity/marktext/releases/latest"><b>Download for macOS</b></a>
+  <a href="https://github.com/greenerycomplexity/marktext/releases"><b>Download for macOS</b></a>
   · macOS 26 or later · Apple Silicon
 </p>
 
@@ -82,7 +82,7 @@ There are no tabs, file tree, image uploaders, command palette or custom spellch
 
 ## Install
 
-1. Download `MarkText-2.0.0-arm64.dmg` from [Releases](https://github.com/greenerycomplexity/marktext/releases/latest).
+1. Download `MarkText-2.0.0-arm64.dmg` from [Releases](https://github.com/greenerycomplexity/marktext/releases).
 2. Open the DMG and drag **MarkText** to **Applications**.
 3. Right-click a `.md` file › Open With › MarkText. To make it the default, use Get Info › Open with › Change All.
 
