@@ -19,18 +19,21 @@
 </p>
 
 > [!NOTE]
-> This is an **unofficial** fork of [MarkText](https://github.com/marktext/marktext). It is a clean-room rewrite in Swift, not an update of the Electron app. The original's history is still on the [`develop`](https://github.com/greenerycomplexity/marktext/tree/develop) branch. It is not affiliated with the MarkText maintainers.
+> This is an **unofficial** fork of [MarkText](https://github.com/marktext/marktext). It is a clean-room rewrite in Swift, not an update of the Electron app, and it is not affiliated with the MarkText maintainers. The original's history is on the [`develop`](https://github.com/greenerycomplexity/marktext/tree/develop) branch.
 
-## Why
+## Why, and how it differs from MarkText
 
-MarkText 0.17.1 (March 2022) was the last release. It's an Electron 1x / Vue 2 app built against the macOS 11 SDK, and its dependencies are end-of-life. MarkText 2 keeps the parts people opened it for (a fast, good-looking way to read markdown, with editing close at hand) and drops everything else.
+[MarkText](https://github.com/marktext/marktext) is actively maintained again, with new releases since late 2026, and it's the right choice if you want a full WYSIWYG editor on Windows, Linux and Mac.
 
-| | MarkText 0.17.1 | MarkText 2 |
+MarkText 2 started from the 0.17.1 Homebrew cask (2022) and went a different way: a Mac-only app that reads markdown first, edits it in a plain-text editor beside the preview, and uses only the system's own frameworks.
+
+| | MarkText 0.23 | MarkText 2 |
 |---|---|---|
-| Stack | Electron, Vue 2, Element UI | Swift 6, AppKit + SwiftUI, WebKit |
-| App size | 285 MB | 13 MB |
-| Runs on | macOS 10.11+ (Intel/Rosetta builds) | macOS 26+, Apple Silicon native |
-| Render a 1 MB document | — | ~45 ms |
+| Platforms | macOS 13+, Windows, Linux | macOS 26+, Apple Silicon only |
+| Stack | Electron 45 | Swift 6, AppKit + SwiftUI, WebKit |
+| macOS download | 150 MB | 4.6 MB (13 MB installed) |
+| Editing | WYSIWYG, tabs, file tree, rich tooling | Reading view + source editor, one window per document |
+| Mac integration | Cross-platform UI | Liquid Glass toolbar, `NSDocument` autosave and versions, Quick Look extension, system find and spellcheck |
 
 ## Features
 
