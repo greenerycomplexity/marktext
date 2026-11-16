@@ -1,0 +1,13 @@
+# Rules for every agent on this project
+- Read `docs/PLAN.md` first. The "Revisions" list at the bottom overrides the earlier sections.
+- Project root: `MarkText/` (relative to the repo root). The old Electron app at `../MarkText.app` is reference only: never modify or launch it.
+- **The user is working on this Mac. Never steal focus.**
+  - No `open` without `-g`.
+  - No `osascript ... activate`, no XCUITest/UI tests, no `qlmanage -p` (it opens a window). Use `qlmanage -t` for thumbnails only.
+  - Launch app binaries directly in the background (`.../MarkText.app/Contents/MacOS/MarkText --snapshot ...`).
+  - Kill any process you start.
+- Toolchain: Xcode 27.2, Swift 6.4, macOS 27.2 SDK, Apple M3 Pro (11 cores). Deployment target macOS 26.0, arm64 only, Swift 6 language mode.
+- Build output goes to `MarkText/build/` (use `-derivedDataPath MarkText/build/DerivedData`). Do not use the default DerivedData.
+- Only edit files you own (listed in your brief). If you need a change in someone else's file, say so in your final report instead.
+- Prefer modern APIs: Swift Testing (`import Testing`), `@Observable`, async/await, macOS 26 SwiftUI/Liquid Glass APIs. Verify any API you are unsure of against the SDK headers/swiftinterface in `/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk` rather than guessing.
+- Final report: what works (with proof: test output, file paths of PNGs), what does not, and any deviations from the contract. Keep it under 40 lines.

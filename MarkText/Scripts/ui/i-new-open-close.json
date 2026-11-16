@@ -1,0 +1,131 @@
+{
+ "prefs": {
+  "NSCloseAlwaysConfirmsChanges": "YES"
+ },
+ "steps": [
+  {
+   "op": "open",
+   "path": "__FIXTURE__/plain.md"
+  },
+  {
+   "op": "wait",
+   "ms": 1500
+  },
+  {
+   "op": "key",
+   "combo": "cmd+n"
+  },
+  {
+   "op": "wait",
+   "ms": 1000
+  },
+  {
+   "op": "expect",
+   "what": "windowCount",
+   "equals": 2
+  },
+  {
+   "op": "key",
+   "combo": "cmd+w"
+  },
+  {
+   "op": "wait",
+   "ms": 800
+  },
+  {
+   "op": "expect",
+   "what": "windowCount",
+   "equals": 1
+  },
+  {
+   "op": "key",
+   "combo": "cmd+o",
+   "dismissModalAfterMs": 800
+  },
+  {
+   "op": "wait",
+   "ms": 1500
+  },
+  {
+   "op": "expect",
+   "what": "windowCount",
+   "equals": 1
+  },
+  {
+   "op": "expect",
+   "what": "windowCount",
+   "equals": 1
+  },
+  {
+   "op": "focusEditor"
+  },
+  {
+   "op": "key",
+   "combo": "cmd+3"
+  },
+  {
+   "op": "wait",
+   "ms": 600
+  },
+  {
+   "op": "focusEditor"
+  },
+  {
+   "op": "type",
+   "text": "x"
+  },
+  {
+   "op": "wait",
+   "ms": 300
+  },
+  {
+   "op": "expect",
+   "what": "modelText",
+   "contains": "x"
+  },
+  {
+   "op": "expect",
+   "what": "edited",
+   "equals": true
+  },
+  {
+   "op": "key",
+   "combo": "cmd+w",
+   "dismissModalAfterMs": 2500,
+   "modalButton": "Save"
+  },
+  {
+   "op": "wait",
+   "ms": 1200
+  },
+  {
+   "op": "expect",
+   "what": "sheetCount",
+   "equals": 1
+  },
+  {
+   "op": "sheetButton",
+   "title": "Save"
+  },
+  {
+   "op": "wait",
+   "ms": 1500
+  },
+  {
+   "op": "expect",
+   "what": "sheetCount",
+   "equals": 0
+  },
+  {
+   "op": "expect",
+   "what": "windowCount",
+   "equals": 0
+  },
+  {
+   "op": "expect",
+   "what": "fileText",
+   "path": "__FIXTURE__/plain.md",
+   "contains": "x"
+  }
+ ]
+}

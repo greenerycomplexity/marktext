@@ -1,0 +1,22 @@
+{
+ "steps": [
+  {
+   "op": "open",
+   "path": "__FIXTURE__/plain.md"
+  },
+  {
+   "op": "wait",
+   "ms": 3000
+  },
+  {
+   "op": "idle",
+   "seconds": 10
+  },
+  {
+   "op": "expect",
+   "what": "metricBelow",
+   "metric": "idleTotalCPUPercent",
+   "max": 1.0
+  }
+ ]
+}

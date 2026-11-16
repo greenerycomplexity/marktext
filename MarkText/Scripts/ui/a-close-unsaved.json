@@ -1,0 +1,100 @@
+{
+ "steps": [
+  {
+   "op": "newDocument"
+  },
+  {
+   "op": "wait",
+   "ms": 800
+  },
+  {
+   "op": "focusEditor"
+  },
+  {
+   "op": "type",
+   "text": "First paragraph of the new document.\n\nSecond paragraph here.\n\nThird paragraph there.\n\n- item one\nitem two\nitem three"
+  },
+  {
+   "op": "wait",
+   "ms": 400
+  },
+  {
+   "op": "expect",
+   "what": "edited",
+   "equals": true
+  },
+  {
+   "op": "expect",
+   "what": "editorText",
+   "contains": "- item one\n- item two\n- item three"
+  },
+  {
+   "op": "key",
+   "combo": "cmd+z"
+  },
+  {
+   "op": "wait",
+   "ms": 120
+  },
+  {
+   "op": "key",
+   "combo": "cmd+z"
+  },
+  {
+   "op": "wait",
+   "ms": 120
+  },
+  {
+   "op": "key",
+   "combo": "cmd+z"
+  },
+  {
+   "op": "wait",
+   "ms": 120
+  },
+  {
+   "op": "key",
+   "combo": "cmd+shift+z"
+  },
+  {
+   "op": "wait",
+   "ms": 300
+  },
+  {
+   "op": "expect",
+   "what": "modelText",
+   "contains": "Third paragraph there."
+  },
+  {
+   "op": "expect",
+   "what": "windowCount",
+   "equals": 1
+  },
+  {
+   "op": "key",
+   "combo": "cmd+w"
+  },
+  {
+   "op": "wait",
+   "ms": 800
+  },
+  {
+   "op": "expect",
+   "what": "sheetCount",
+   "equals": 1
+  },
+  {
+   "op": "sheetButton",
+   "title": "Don’t Save"
+  },
+  {
+   "op": "wait",
+   "ms": 800
+  },
+  {
+   "op": "expect",
+   "what": "windowCount",
+   "equals": 0
+  }
+ ]
+}

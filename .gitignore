@@ -1,0 +1,15 @@
+# The original Electron app bundle (reference only, not part of the source)
+/MarkText.app/
+
+# Build output
+build/
+DerivedData/
+.build/
+.swiftpm/
+*.xcodeproj/
+dist/
+
+# Local signing overrides
+MarkText/Config/Signing.local.xcconfig
+
+.DS_Store

@@ -1,0 +1,175 @@
+{
+ "steps": [
+  {
+   "op": "open",
+   "path": "__FIXTURE__/showcase.md"
+  },
+  {
+   "op": "wait",
+   "ms": 2500
+  },
+  {
+   "op": "expect",
+   "what": "mainMenuTitles",
+   "equals": "MarkText,File,Edit,View,Window"
+  },
+  {
+   "op": "menuAudit"
+  },
+  {
+   "op": "key",
+   "combo": "cmd+2"
+  },
+  {
+   "op": "wait",
+   "ms": 800
+  },
+  {
+   "op": "expect",
+   "what": "mode",
+   "equals": "split"
+  },
+  {
+   "op": "key",
+   "combo": "cmd+3"
+  },
+  {
+   "op": "wait",
+   "ms": 800
+  },
+  {
+   "op": "expect",
+   "what": "mode",
+   "equals": "edit"
+  },
+  {
+   "op": "focusEditor"
+  },
+  {
+   "op": "menuAudit"
+  },
+  {
+   "op": "key",
+   "combo": "cmd+f"
+  },
+  {
+   "op": "wait",
+   "ms": 400
+  },
+  {
+   "op": "expect",
+   "what": "editorFindBarVisible",
+   "equals": true
+  },
+  {
+   "op": "key",
+   "combo": "cmd+1"
+  },
+  {
+   "op": "wait",
+   "ms": 800
+  },
+  {
+   "op": "expect",
+   "what": "mode",
+   "equals": "read"
+  },
+  {
+   "op": "focusPreview"
+  },
+  {
+   "op": "menuAudit"
+  },
+  {
+   "op": "key",
+   "combo": "cmd+f"
+  },
+  {
+   "op": "wait",
+   "ms": 400
+  },
+  {
+   "op": "expect",
+   "what": "findBarVisible",
+   "equals": true
+  },
+  {
+   "op": "key",
+   "combo": "cmd+e"
+  },
+  {
+   "op": "wait",
+   "ms": 800
+  },
+  {
+   "op": "expect",
+   "what": "mode",
+   "equals": "split"
+  },
+  {
+   "op": "key",
+   "combo": "cmd+e"
+  },
+  {
+   "op": "wait",
+   "ms": 800
+  },
+  {
+   "op": "expect",
+   "what": "mode",
+   "equals": "read"
+  },
+  {
+   "op": "key",
+   "combo": "cmd+opt+e"
+  },
+  {
+   "op": "wait",
+   "ms": 800
+  },
+  {
+   "op": "expect",
+   "what": "mode",
+   "equals": "edit"
+  },
+  {
+   "op": "key",
+   "combo": "cmd+2"
+  },
+  {
+   "op": "wait",
+   "ms": 600
+  },
+  {
+   "op": "key",
+   "combo": "cmd+f"
+  },
+  {
+   "op": "wait",
+   "ms": 400
+  },
+  {
+   "op": "expect",
+   "what": "findBarVisible",
+   "equals": true
+  },
+  {
+   "op": "key",
+   "combo": "cmd+,"
+  },
+  {
+   "op": "wait",
+   "ms": 600
+  },
+  {
+   "op": "expect",
+   "what": "settingsVisible",
+   "equals": true
+  },
+  {
+   "op": "expect",
+   "what": "mainMenuTitles",
+   "equals": "MarkText,File,Edit,View,Window"
+  }
+ ]
+}

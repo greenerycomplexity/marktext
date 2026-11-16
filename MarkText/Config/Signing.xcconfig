@@ -1,0 +1,8 @@
+// Optional local signing overrides. Create Config/Signing.local.xcconfig (gitignored), e.g.:
+//   CODE_SIGN_IDENTITY = Developer ID Application
+//   DEVELOPMENT_TEAM = ABCDE12345
+#include? "Signing.local.xcconfig"
+
+// Release builds must not carry com.apple.security.get-task-allow (notarization rejects it).
+CODE_SIGN_INJECT_BASE_ENTITLEMENTS[config=Release] = NO
+OTHER_CODE_SIGN_FLAGS[config=Release] = --timestamp

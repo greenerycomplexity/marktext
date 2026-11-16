@@ -1,0 +1,26 @@
+{
+ "steps": [
+  {
+   "op": "open",
+   "path": "__FIXTURE__/showcase.md"
+  },
+  {
+   "op": "wait",
+   "ms": 4000
+  },
+  {
+   "op": "newDocument"
+  },
+  {
+   "op": "wait",
+   "ms": 3000
+  },
+  {
+   "op": "newDocument"
+  },
+  {
+   "op": "wait",
+   "ms": 3000
+  }
+ ]
+}

@@ -1,0 +1,25 @@
+{
+ "steps": [
+  {
+   "op": "open",
+   "path": "__FIXTURE__/showcase.md"
+  },
+  {
+   "op": "wait",
+   "ms": 4000
+  },
+  {
+   "op": "key",
+   "combo": "cmd+n"
+  },
+  {
+   "op": "wait",
+   "ms": 3000
+  },
+  {
+   "op": "expect",
+   "what": "windowCount",
+   "equals": 2
+  }
+ ]
+}

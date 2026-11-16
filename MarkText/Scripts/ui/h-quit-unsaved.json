@@ -1,0 +1,71 @@
+{
+ "steps": [
+  {
+   "op": "newDocument"
+  },
+  {
+   "op": "wait",
+   "ms": 600
+  },
+  {
+   "op": "focusEditor"
+  },
+  {
+   "op": "type",
+   "text": "unsaved words"
+  },
+  {
+   "op": "wait",
+   "ms": 300
+  },
+  {
+   "op": "expect",
+   "what": "edited",
+   "equals": true
+  },
+  {
+   "op": "key",
+   "combo": "cmd+q",
+   "expectTerminate": true
+  },
+  {
+   "op": "wait",
+   "ms": 1000
+  },
+  {
+   "op": "expect",
+   "what": "sheetCount",
+   "equals": 1
+  },
+  {
+   "op": "sheetButton",
+   "title": "Cancel"
+  },
+  {
+   "op": "wait",
+   "ms": 800
+  },
+  {
+   "op": "expect",
+   "what": "windowCount",
+   "equals": 1
+  },
+  {
+   "op": "key",
+   "combo": "cmd+q",
+   "expectTerminate": true
+  },
+  {
+   "op": "wait",
+   "ms": 1000
+  },
+  {
+   "op": "sheetButton",
+   "title": "Don’t Save"
+  },
+  {
+   "op": "wait",
+   "ms": 4000
+  }
+ ]
+}
