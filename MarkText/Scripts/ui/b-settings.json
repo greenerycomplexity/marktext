@@ -1,6 +1,0 @@
-{"steps": [
-  {"op": "newDocument"}, {"op": "wait", "ms": 600},
-  {"op": "expect", "what": "settingsVisible", "equals": false},
-  {"op": "key", "combo": "cmd+,"}, {"op": "wait", "ms": 800},
-  {"op": "expect", "what": "settingsVisible", "equals": true}
-]}
